@@ -84,11 +84,11 @@ ${menu.group}
 ${menu.search}
 
 
-🥶𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋🥶
+💀𝐌𝐚𝐝𝐞 𝐛𝐲 D_O_R_A💀
 
-> ROBIN MENU MSG
+> DORA MENU MSG
 `;
-      await robin.sendMessage(
+      await dora.sendMessage(
         from,
         {
           image: {
