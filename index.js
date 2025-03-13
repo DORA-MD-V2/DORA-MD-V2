@@ -402,7 +402,7 @@ async function connectToWA() {
   });
 }
 app.get("/", (req, res) => {
-  res.send("hey, ❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ started✅");
+  res.send("hey, DORA started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
