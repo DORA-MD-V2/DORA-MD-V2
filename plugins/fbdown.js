@@ -40,7 +40,7 @@ cmd(
     }
   ) => {
     try {
-      if (!q) return reply("*Please provide a valid Facebook video URL!* 🌚❤️");
+      if (!q) return reply("*Please provide a valid Facebook video URL!* 💀💗");
 
       // Validate the Facebook URL format
       const fbRegex = /(https?:\/\/)?(www\.)?(facebook|fb)\.com\/.+/;
@@ -48,7 +48,7 @@ cmd(
         return reply("*Invalid Facebook URL! Please check and try again.* 🌚");
 
       // Fetch video details
-      reply("*Downloading your video...* 🌚❤️");
+      reply("*Downloading your video...* 💀💗");
 
       const result = await getFbVideoInfo(q);
 
@@ -60,12 +60,11 @@ cmd(
 
       // Prepare and send the message with video details
       let desc = `
-*❤️ ROBIN FB VIDEO DOWNLOADER ❤️*
+*☠️ DORA MD VIDEO DOWNLOADER ☠️*
 
-👻 *Title*: ${title || "Unknown"}
 👻 *Quality*: ${hd ? "HD Available" : "SD Only"}
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 𝐒_𝐈_𝐇_𝐈_𝐋_𝐄_𝐋
+𝐌𝐚𝐝𝐞 𝐛𝐲 R_A_S_I_D_U
         `;
       await robin.sendMessage(
         from,
@@ -99,7 +98,7 @@ cmd(
         return reply("*No downloadable video found!* 🌚");
       }
 
-      return reply("*Thanks for using my bot* 🌚❤️");
+      return reply("*THANKS FOR USING MY BOT* 💀💗");
     } catch (e) {
       console.error(e);
       reply(`*Error:* ${e.message || e}`);
