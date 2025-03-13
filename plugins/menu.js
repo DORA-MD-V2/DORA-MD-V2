@@ -1,6 +1,5 @@
-const { readEnv } = require("../lib/database");
 const { cmd, commands } = require("../command");
-
+const config = requier('../config');
 cmd(
   {
     pattern: "menu",
@@ -40,7 +39,6 @@ cmd(
     }
   ) => {
     try {
-      const config = await readEnv();
       let menu = {
         main: "",
         download: "",
@@ -89,7 +87,7 @@ ${menu.search}
 
 > DORA MENU MSG
 `;
-      await dora.sendMessage(
+      await Robin.sendMessage(
         from,
         {
           image: {
